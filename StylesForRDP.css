@@ -37,6 +37,7 @@
 }
 
 .button{
+    font-size: 11px;
     border: none;
     border-radius: 2px;
     font-style: italic;
@@ -44,10 +45,11 @@
     background-color: #E3B873;
     cursor: pointer;
     transition: font-weight 0.5s;
+    filter: drop-shadow(10px 10px 10px rgba(242, 151, 5, 0.2));
 }
 
 .navigation__btn{
-    width: 180px;
+    width: 161px;
     padding: 13px 33px 13px;
     margin-right: 90px;
 }
@@ -105,7 +107,7 @@
 
 .section-1__btn-1{
     padding: 20px 41px 20px;
-    width: 235px;
+    width: 207px;
     white-space: nowrap;
     margin-right: 20px;
 }
@@ -114,7 +116,7 @@
     padding: 20px 22px 20px;
     background-color: transparent;
     border: 1px solid #ffffff;
-    width: 235px;
+    width: 207px;
 }
 
 .section-1__btn-2:hover{
@@ -123,5 +125,278 @@
 
 .section-2{
     height: 1074px;
-    background-color: #131313;
+    background-color: #131313; 
+    padding: 107px 0 257px;
+}
+
+.section-2__container{
+    max-width: 1171px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.section-2__container-left{
+    margin-top: 69px;
+    margin-right: 50px;
+}
+
+.title__use-twice{
+    font-family: Yeseva One;
+    font-size: 27px;
+    color: #E3B873;
+}
+
+.section-2__container-div-text{
+    font-size: 14px;
+    color:#ffffff;
+    width: 442px;
+    margin-top: 34px;
+    margin-bottom: 8px;
+}
+
+.section-2__container-titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    height: 23px;
+}
+
+.section-2__container-titles button{
+    color:#ffffff4d;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Yeseva One;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.section-2__container-titles button:hover{
+    color: #E3B873;
+    border-bottom: solid 1px #E3B873;
+}
+
+.section-2__container-discriprion{
+    color: #ffffff;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 81px;
+}
+
+.section-2__container-discriprion div{
+    width: 200px;
+    margin-top: 34px;
+}
+
+.section-2__container-discriprion div::first-line{
+    font-size: 18px;
+    font-family: Yeseva One;
+    color: #E3B873;
+}
+
+.section-2__container-arrows button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.section-2__container-points{
+    margin: 0 30px 0 30px;
+}
+
+.section-2__container-arrows svg{
+    fill: #ffffff;
+}
+
+.section-2__container-arrows svg:hover{        
+    fill: #E3B873;
+}
+
+.section-2__camera{
+margin-top: 90px;
+}
+
+.section-2__camera div{
+    color: #ffffff;
+}
+
+.section-2__camera img{
+    margin-top: 12px;
+    margin-left: 30px;
+}
+
+.title__middle{
+    font-family: Yeseva One;
+    font-size: 20px;
+}
+
+.section-3{
+    max-width: 817px;
+    margin: -230px auto;
+    text-align: center;
+}
+
+.section-3__img{
+    background-image: url(ImagesForRDP/section-3.png);
+    height: 434px;
+    padding-top: 150px;
+}
+
+.section-3__line{
+    margin: 62px 0 34px;
+    text-align: center;
+}
+
+.section-3__div-txt{
+    max-width: 610px;
+    margin: 0 auto 91px;
+}
+
+.section-3__input-btn{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 33px;
+}
+
+.section-3__input-btn button{
+    font-size: 13px;
+    font-style: normal;
+    width: 200px;
+    padding: 17px 0 17px;
+}
+
+.section-3__input-pl{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.section-3__input-pl input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #36363644;
+    padding-bottom: 6px;
+}
+
+.section-3__input-pl label{
+    font-size: 13px;
+    color: #3636367e;
+    margin-bottom: 4px;
+}
+
+#l-1:focus, #l-2:focus{
+    outline: none;
+ }  
+
+ #l-1::placeholder,  #l-2::placeholder{
+    font-size: 14px;
+    color: #363636;
+ }
+
+.section-3__input-checkbox_label_text{
+    max-width: 260px;
+}
+
+.section-3__input-label{
+    max-width: 285px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 128px;
+}
+
+.section-3__input-space{
+    margin-left: 18px;
+}
+
+.section-3__input-checkbox{
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.section-3__input-fake{
+    display: inline-flex;
+    width: 17px;
+    height: 17px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+    margin-left: -23px;
+}
+
+.section-3__input-fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.section-3__input-checkbox:checked + .section-3__input-fake::before{
+    opacity: 1;
+}
+
+.section-3__repair-img{
+    margin-top: 13px;
+}
+
+.section-4{
+    max-width: 1236px;
+    margin: 261px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-4__block-1{
+    background-image: url(ImagesForRDP/section-4-block-1.png);
+    height: 421px;
+    width: 32%;  
+}
+
+.section-4__block-2{
+    background-image: url(ImagesForRDP/section-4-block-2.png);
+    height: 421px;
+    width: 32%;
+}
+
+.section-4__block-3{
+    background-image: url(ImagesForRDP/section-4-block-3.png);
+    height: 421px;
+    width: 32%;
+}
+
+.section-4__list{
+    font-family: Yeseva One;
+    font-size: 18px; 
+    color: #363636;
+    background-color: #ffffff;
+    filter: drop-shadow(10px 10px 20px rgba(133, 133, 133, 0.2));
+    width: 84%;
+    margin: 294px auto 0;
+    padding: 25px 0 49px 34px;
+}
+
+.section-4__list li{
+    margin-top: 13px;
+    font-size: 13px;
+    color: #959595;
+}
+
+.section-4__price{
+    position: relative;
+    z-index: 1;
+    margin-top: -27px;
+    background-color: #E3B873;
+    width: 58%;
+    height: 54px;
+    text-align: center;
+    padding-top: 17px;
+    font-family: Yeseva One;
+    font-size: 18px;
+    color: #ffffff;
+    filter: drop-shadow(10px 10px 10px rgba(242, 151, 5, 0.2));
 }
