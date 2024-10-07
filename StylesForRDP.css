@@ -103,6 +103,7 @@
     font-size: 22px;
     margin: 19px 0 25px;
     max-width: 540px;
+    line-height: 1.6;
 }
 
 .section-1__btn-1{
@@ -130,14 +131,14 @@
 }
 
 .section-2__container{
-    max-width: 1171px;
-    margin: 0 auto;
+    margin: 0 134px 0 134px;
     display: flex;
+    max-width: 1171px;
 }
 
 .section-2__container-left{
     margin-top: 69px;
-    margin-right: 50px;
+    max-width: 500px;
 }
 
 .title__use-twice{
@@ -152,6 +153,7 @@
     width: 442px;
     margin-top: 34px;
     margin-bottom: 8px;
+    line-height: 1.9;
 }
 
 .section-2__container-titles{
@@ -159,6 +161,12 @@
     justify-content: space-between;
     margin-bottom: 45px;
     height: 23px;
+    max-width: 630px;
+}
+
+.section-2__container-img{
+width: 100%;
+height: 482px;
 }
 
 .section-2__container-titles button{
@@ -169,6 +177,8 @@
     background-color:transparent;
     border: none;
     cursor: pointer;
+    white-space: nowrap;
+    padding-left: 0;
 }
 
 .section-2__container-titles button:hover{
@@ -215,16 +225,13 @@
 }
 
 .section-2__camera{
-margin-top: 90px;
+    text-align: center;
+    margin-top: 90px;
 }
 
 .section-2__camera div{
     color: #ffffff;
-}
-
-.section-2__camera img{
-    margin-top: 12px;
-    margin-left: 30px;
+    margin-bottom: 12px;
 }
 
 .title__middle{
@@ -252,6 +259,7 @@ margin-top: 90px;
 .section-3__div-txt{
     max-width: 610px;
     margin: 0 auto 91px;
+    line-height: 2;
 }
 
 .section-3__input-btn{
@@ -267,27 +275,32 @@ margin-top: 90px;
     padding: 17px 0 17px;
 }
 
-.section-3__input-pl{
+.section-3__input-pl, .section-5__input-pl{
     display: flex;
     flex-direction: column;
-    align-items: start;
 }
 
-.section-3__input-pl input{
+.section-3__input-pl input, .section-5__input-pl input{
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 2px solid #36363644;
     padding-bottom: 6px;
+    background-color:transparent;
 }
 
-.section-3__input-pl label{
+.section-3__input-pl label, .section-5__input-pl label{
     font-size: 13px;
     color: #3636367e;
     margin-bottom: 4px;
+    text-align: left;
 }
 
-#l-1:focus, #l-2:focus{
+.section-5__input-pl label{
+    color: #ffffff7a;
+}
+
+#l-1:focus, #l-2:focus, #ll-1:focus, #ll-2:focus, #ll-3:focus, #lll-1:focus, #lll-2:focus, #lll-3:focus{
     outline: none;
  }  
 
@@ -296,8 +309,9 @@ margin-top: 90px;
     color: #363636;
  }
 
-.section-3__input-checkbox_label_text{
-    max-width: 260px;
+ #ll-1::placeholder, #ll-2::placeholder, #ll-3::placeholder, #lll-1::placeholder, #lll-2::placeholder, #lll-3::placeholder{
+    font-size: 14px;
+    color: #ffffff
 }
 
 .section-3__input-label{
@@ -305,6 +319,7 @@ margin-top: 90px;
     margin: 0 auto;
     text-align: left;
     margin-bottom: 128px;
+    font-size: 14px;
 }
 
 .section-3__input-space{
@@ -346,7 +361,7 @@ margin-top: 90px;
 
 .section-4{
     max-width: 1236px;
-    margin: 261px auto;
+    margin: 261px auto 0 auto ;
     display: flex;
     justify-content: space-between;
 }
@@ -399,4 +414,318 @@ margin-top: 90px;
     font-size: 18px;
     color: #ffffff;
     filter: drop-shadow(10px 10px 10px rgba(242, 151, 5, 0.2));
+}
+
+.section-5{
+    display: flex;
+    justify-content: space-between;
+    margin: 354px 0 220px;
+}
+
+.section-5__left{
+    background-image: url(ImagesForRDP/section-5.png);
+    max-width: 702px;
+    padding-top: 125px;
+}
+
+.section-5__left_div_benifits{
+ display: flex;
+ align-items: center;
+ margin: 0 0 102px 225px;
+ height: 41px;
+ font-size: 14px;
+ color: #363636;
+}
+
+.section-5__right{
+    justify-items: center;
+    padding-top: 120px;
+    color: #ffffff;
+    margin-right: 10%;  
+}
+
+.section-5__right-div{
+    background-color: #131313;
+    width: 500px;
+    text-align: center;
+    padding-top: 28px;
+}
+
+.section-5__right-title{
+    font-size: 18px;
+}
+
+.section-5__input-pl{
+    margin: 40px auto 16px;
+    width: 82%;
+}
+
+.section-5__input-pl input{
+    color: #ffffff;
+}
+
+.section-5__input-label{
+    font-size: 14px;
+    width: 75%;
+}
+
+.section-5__btn{
+    font-style: normal;
+    width: 213px;
+    padding: 18px 0 18px;
+    margin: 39px 0 27px 190px; 
+}
+
+.section-5__right-pig{
+    display: flex;
+margin: 20px 0 0 5px;
+}
+
+.section-5__right-pig p{
+    color: #E3B873;
+    padding-top: 25px;
+}
+
+.section-6{
+    display: flex;
+    position: relative;
+    background-image: url(ImagesForRDP/section-6.png);
+    background-size: cover;
+    height: 864px;
+}
+
+.section-6::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.section-6__left{
+    display: flex;
+    flex-direction: column;
+    padding: 137px 205px 47px 99px;
+    position: relative;
+    z-index: 1;
+}
+
+.section-6__left div{
+    margin-bottom: 47px;
+}
+
+.section-6__left button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    text-align: left;
+    color: #ffffff;
+    margin: 25px 0 0 -99px;
+    text-decoration: none;
+    width: 290px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.section-6__left button:hover{
+    color: #E3B873;
+    border-bottom:1px solid #E3B873;
+}
+
+.section-6__right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 37px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.section-6__right-1{
+    margin-top: -40px;
+    width: 100%;
+    height: 557px;
+}
+
+.section-6__right-2{
+margin-top: -112px;
+width: 100%;
+height: 275px;
+}
+
+.section-6__right-3{
+    width: 100%;
+    height: 350px;
+}
+
+.section-6__right-4{
+    margin-top: -356px;
+    width: 100%;
+    height: 625px;
+}
+
+.section-7{
+    margin-top: 110px;
+    text-align: center;
+}
+
+.section-7__img-hands{
+    margin-top: 13px;
+}
+
+.section-7__container{
+    margin: 70px auto;
+    max-width: 1236px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-7__block{
+    background-color: #ffffff;
+    filter: drop-shadow(10px 10px 20px rgba(133, 133, 133, 0.2));
+    max-width: 376px;
+    padding: 24px 31px 90px 20px;
+    text-align: left;
+    font-size: 13px;
+    color: #959595;
+    height: 428px;
+    line-height: 1.8;
+}
+
+.section-7__inside-block{
+    display: flex;
+}
+
+.section-7__inside-block img{
+    margin: 0 23px 23px 0;
+}
+
+.section-7__inside-block p{
+    color: #181818;
+    font-size: 18px;
+    font-family: Yeseva One;
+}
+
+.section-7__title{
+    line-height: 1.6;
+}
+
+.section-7__days{
+    display: flex;
+    background-color: #E3B873;
+    width: 294px;
+    height: 54px;
+    filter: drop-shadow(10px 10px 10px rgba(242, 151, 5, 0.2));
+    margin-top: 43px;
+    margin-left: -19px;
+}
+
+.section-7__days div{
+    border-right:1px solid #ffffff;
+    width: 147px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Yeseva One;
+    color: #ffffff;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.section-7__days img{
+    margin-left: -25px;
+    margin-right: 10px;
+}
+
+.section-7__days div:last-child{
+    border-right:none;
+}
+
+.section-8{
+    height: 954px;
+    position: relative;
+    background-image: url(ImagesForRDP/section-8.png);
+    background-size: cover;
+    text-align: center;
+    padding-top: 275px;
+}
+
+.section-8::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.section-8__block{
+    background-color: #131313;
+    max-width: 883px;
+    height: 445px;
+    position: relative;
+    z-index: 1;
+    margin: 153px auto -222px;
+    color: #ffffff;
+    padding: 34px 181px;
+    text-align: center;
+}
+
+.section-8__group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-8__group div{
+    width: 231px;
+}
+
+#lll-3{
+    width: 520px;
+}
+
+.section-8__modification{
+ margin-left: 0;
+ margin-right: 0;
+}
+
+.section-8__checkbox-modification{
+    margin: 46px auto 25px;
+    width: 280px;
+    text-align: left;
+}
+
+.section-8__btn-modification{   
+    margin: 0;
+    width: 200px;
+}
+
+.section-8__adress{
+    position: relative;
+    z-index: 1;
+    color: #E3B873;
+    max-width: 589px;
+    margin: 0 auto 43px;
+    line-height: 1.4;
+}
+
+.section-8__adress p{
+    margin-bottom: 26px;
+}
+
+.section-8__adress a{
+    margin-right: 15px;
+}
+
+.section-8__map{
+    position: relative;
+    z-index: 1;
+}
+
+.footer__navigation{
+    height: 133px;
 }
