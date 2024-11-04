@@ -16,7 +16,7 @@
             <a href="#">TEAM</a>
             <a href="#">REVIEWS</a>
             <a href="#">CONTACTS</a>
-            <div class="navigation__div-2">+7 (928) 768-32-39</div>
+            <div class="navigation__div-2">+7 (928) 768-32-39</div> 
             <button class="button navigation__btn">REQUEST A CALL</button>
         </nav>
     </header>
@@ -43,11 +43,11 @@
                 </div>
                 <div class="section-2__container-right">
                     <div class="section-2__container-titles">
-                    <button >ROSTOV-ON-DON, ADMIRAL</button>
-                    <button>SOCHI THIEVES</button>       <!--Я вижу это как дополнительные кнопки для переключения контента-->
-                    <button>ROSTOV-ON-DON PATRIOTIC</button>
+                    <button class="section-2__container-btn active">ROSTOV-ON-DON, ADMIRAL</button>
+                    <button class="section-2__container-btn">SOCHI THIEVES</button>       
+                    <button class="section-2__container-btn">ROSTOV-ON-DON PATRIOTIC</button>
                     </div>
-                    <img class="section-2__container-img" src="ImagesForRDP/section-2.png" alt="chill">
+                    <div class="section-2__container-img"></div>
                     <div class="section-2__container-group-img">
                         <img class="section-2__container-img-other" src="ImagesForRDP/section-2-other.png" alt="chill">
                         <img class="section-2__container-left-img" src="ImagesForRDP/section-2-left.svg" alt="<-">
@@ -70,15 +70,30 @@
                         </div>
                     </div>
                     <div class="section-2__container-arrows">
-                        <button>
+                        <button id="left-arrow">
                             <svg width="42" height="14" viewBox="0 0 42 14" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 13.2761L2.308e-05 6.63808L6.63807 3.84663e-05L7.58563 0.947606L1.89516 6.63808L7.58563 12.3286L6.63807 13.2761Z"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.94758 5.96828L41.4556 5.96829L41.4556 7.30835L0.94758 7.30834L0.94758 5.96828Z"/>
                             </svg>
                         </button>
-                        <img class="section-2__container-points" src="ImagesForRDP/points.svg" alt="***">
-<!--Если подключить JS, то вставлял бы отдельно эти точки и передавал класс эктив чтобы они меняли контент и свой цвет на белый, а так нет смысла-->
-                        <button>
+                    <div class="section-2__container-points">
+                        <button class="btn-point active1">
+                            <svg width="10" height="11" viewBox="0 0 10 11" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.0583496" y="0.45636" width="9.56667" height="9.56667" rx="4.78333"/>
+                            </svg>
+                        </button>
+                        <button class="btn-point">
+                            <svg width="10" height="11" viewBox="0 0 10 11" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.0583496" y="0.45636" width="9.56667" height="9.56667" rx="4.78333"/>
+                            </svg>
+                        </button>
+                        <button class="btn-point">
+                            <svg width="10" height="11" viewBox="0 0 10 11" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.0583496" y="0.45636" width="9.56667" height="9.56667" rx="4.78333"/>
+                            </svg>
+                        </button>
+                    </div>  
+                        <button id="right-arrow">
                             <svg width="42" height="14" viewBox="0 0 42 14" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0451 0L41.6831 6.63804L35.0451 13.2761L34.0975 12.3285L39.788 6.63804L34.0975 0.947567L35.0451 0Z"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M40.7356 7.30784L0.227569 7.30784L0.22757 5.96777L40.7356 5.96778L40.7356 7.30784Z"/>
@@ -351,6 +366,7 @@
             <button class="button navigation__btn">REQUEST A CALL</button>
         </nav>
     </footer>
+    <script src="JsForRDP.js"></script>
 </body>
 </html>
 
