@@ -1,7 +1,19 @@
 const imgArray = [
-"ImagesForRDP/section-2.png",
-"ImagesForRDP/section-22.png",
-"ImagesForRDP/section-222.png"
+{url : "ImagesForRDP/section-2.png",
+ city : "Rostov-on-Don <br> LCD admiral",
+ area : "81 m<sup>2</sup>",
+ time : "3.5 months"
+},
+{url :"ImagesForRDP/section-22.png",
+city : "Sochi <br> Thieves",
+area : "105 m<sup>2</sup>",
+time : "4 months"
+},
+{url :"ImagesForRDP/section-222.png",
+city : "Rostov-on-Don <br> Patriotic",
+area : "93 m<sup>2</sup>",
+time : "3 months"
+}
 ];
 
 const image = document.querySelector('.section-2__container-img');
@@ -9,6 +21,7 @@ const leftArrow = document.querySelector('#left-arrow');
 const rightArrow = document.querySelector('#right-arrow');
 const btns = document.querySelectorAll('.section-2__container-btn');
 const points = document.querySelectorAll('.btn-point');
+const discription = document.querySelectorAll('.inner-span');
 
 let counter = 0;
 
@@ -18,9 +31,7 @@ leftArrow.addEventListener('click', function(){
     } else{
         --counter
     }
-    image.style.backgroundImage = `url(${imgArray[counter]})`;
-    act1();
-    act2();
+    setImgAndClass();
 });
 
 rightArrow.addEventListener('click', function(){    
@@ -29,46 +40,23 @@ rightArrow.addEventListener('click', function(){
     }else{
         ++counter
     }
-    image.style.backgroundImage = `url(${imgArray[counter]})`;
-    act1();
-    act2();
+    setImgAndClass();
 }); 
 
-btns.forEach(function(elem){
-    elem.addEventListener('click', function(){
-        if(elem === btns[0]){
-            counter = 0;
-            image.style.backgroundImage = `url(${imgArray[0]})`;
-        } else if(elem === btns[1]){
-            counter = 1;
-            image.style.backgroundImage = `url(${imgArray[1]})`;
-        } else {
-            counter = 2;
-            image.style.backgroundImage = `url(${imgArray[2]})`;
-        }
-        act1();
-        act2();
-    })
-});
+function pointsOrBtns(arr){
+    arr.forEach(function(elem, index){
+        elem.addEventListener('click', function(){
+            counter = index;
+            setImgAndClass();
+        })
+    });
+}
+pointsOrBtns(btns);
+pointsOrBtns(points);
 
-points.forEach(function(elem){
-    elem.addEventListener('click', function(){
-        if(elem === points[0]){
-            counter = 0;
-            image.style.backgroundImage = `url(${imgArray[0]})`;
-        } else if(elem === points[1]){
-            counter = 1;
-            image.style.backgroundImage = `url(${imgArray[1]})`;
-        } else {
-            counter = 2;
-            image.style.backgroundImage = `url(${imgArray[2]})`;
-        }
-        act1();
-        act2();
-    })
-});
+function setImgAndClass(){
+    image.style.backgroundImage = `url(${imgArray[counter].url})`;
 
-function act1(){
     btns.forEach(function(elem){
         if (elem === btns[counter]){
             elem.classList.add('active');
@@ -76,9 +64,7 @@ function act1(){
             elem.classList.remove('active');
         }
     })
-}
-
-function act2(){
+    
     points.forEach(function(elem){
         if (elem === points[counter]){
             elem.classList.add('active1');
@@ -86,4 +72,16 @@ function act2(){
             elem.classList.remove('active1');
         }
     })
+    
+    discription.forEach(function(elem, index){
+        if(index === 0){
+            elem.innerHTML = imgArray[counter].city
+        } else if(index === 1){
+            elem.innerHTML = imgArray[counter].area
+        }else {
+            elem.innerHTML = imgArray[counter].time
+        }
+    })
 }
+
+
