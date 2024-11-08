@@ -13,8 +13,7 @@ time : "4 months"
 city : "Rostov-on-Don <br> Patriotic",
 area : "93 m<sup>2</sup>",
 time : "3 months"
-}
-];
+}];
 
 const image = document.querySelector('.section-2__container-img');
 const leftArrow = document.querySelector('#left-arrow');
